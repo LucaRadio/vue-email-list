@@ -20,18 +20,16 @@ createApp({
 
                         if (this.mailListTemp.length === this.counter) {
                             this.mailList = this.mailListTemp
-                            this.mailListTemp = [];
+                            this.mailListTemp = []
                         };
 
 
                     })
 
             };
-
-
-
-
         },
+    },
+    mounted() {
 
     }
 

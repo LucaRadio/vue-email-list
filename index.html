@@ -15,14 +15,14 @@
     <div id="app" class="text-center">
         <h1 class="text-primary p-4">Mail Generator</h1>
         <form @submit.prevent="generateRandomMail()">
-            <input type="number" class="form-control m-auto mb-3 w-50" v-model="counter"
+            <input type="number" class="form-control m-auto mb-3 w-25" v-model="counter"
                 placeholder="Insert here email's amount to generate">
-            <button class="btn btn-warning">Generate!</button>
+            <button class="btn btn-warning mb-3">Generate!</button>
 
         </form>
         <div class="numbers-container text-white">
             <ul class="list-group-flush">
-                <li class="list-group-item p-2 d-flex flex-wrap" v-for="item,i in mailList" :key="i">
+                <li class="list-group-item p-2" v-for="item,i in mailList" :key="i">
                     {{item.response}}
                 </li>
             </ul>
